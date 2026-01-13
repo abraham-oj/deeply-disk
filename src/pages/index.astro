@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Packages from '../components/Packages';
+import Testimonials from '../components/Testimonials';
+import Contact from '../components/Contact';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout 
+  title="Servicios Funerarios De Jesús | 18+ Años en Puebla | Planes desde $596"
+  description="Funeraria en Puebla con más de 18 años de experiencia. Cremación con horno propio, planes a futuro desde $596 mensuales, capillas de velación. Servicio 24/7. Convenios Audi e INAPAM."
+>
+  <Header />
+  <Hero client:load />
+  
+  <!-- 24/7 Banner -->
+  <div class="bg-gold-600 text-black py-4 px-6 relative z-20 sticky top-0">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+      <div class="flex items-center gap-3">
+        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <p class="font-bold text-lg uppercase tracking-wider">Atención Inmediata las 24 Horas</p>
+      </div>
+      <a href="tel:+522222576534" class="text-3xl font-serif font-black hover:text-white transition-colors">
+        222 257 6534
+      </a>
+    </div>
+  </div>
+
+  <Services client:load />
+  <Packages client:load />
+  <Testimonials client:load />
+  <Contact client:load />
+  <FloatingWhatsApp client:load />
+  <Footer />
 </Layout>
+
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out;
+  }
+</style>

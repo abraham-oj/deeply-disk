@@ -1,22 +1,64 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css';
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL.href} />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL('/images/og-image.jpg', Astro.site).href} />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL('/images/og-image.jpg', Astro.site).href} />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FuneralHome",
+        "name": "Servicios Funerarios De Jesús",
+        "description": "Más de 18 años brindando paz y certeza legal a las familias poblanas",
+        "url": "https://serviciosfunerariosdejesus.com",
+        "telephone": "+522222576534",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Juan de Palafox y Mendoza 2616-A",
+          "addressLocality": "Puebla",
+          "addressRegion": "Pue",
+          "postalCode": "72380",
+          "addressCountry": "MX"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

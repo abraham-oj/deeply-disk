@@ -1,0 +1,60 @@
+---
+import { Phone, Mail, MapPin } from 'lucide-react';
+---
+
+<footer class="bg-black text-slate-500 border-t border-slate-900">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- About -->
+      <div>
+        <h3 class="text-white font-serif text-xl mb-4">Servicios Funerarios De Jesús</h3>
+        <p class="text-sm leading-relaxed mb-4">
+          Más de 18 años brindando paz, dignidad y certeza legal a las familias poblanas en momentos difíciles.
+        </p>
+        <p class="text-gold-500 text-sm font-bold">
+          "Calidez humana cuando más se necesita"
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white font-bold mb-4">Enlaces Rápidos</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#inicio" class="hover:text-gold-500 transition-colors">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-gold-500 transition-colors">Servicios</a></li>
+          <li><a href="#planes" class="hover:text-gold-500 transition-colors">Planes a Futuro</a></li>
+          <li><a href="#contacto" class="hover:text-gold-500 transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-bold mb-4">Contacto 24/7</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-2">
+            <Phone class="w-4 h-4 text-gold-500" />
+            <a href="tel:+522222576534" class="hover:text-gold-500">222 257 6534</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <Mail class="w-4 h-4 text-gold-500" />
+            <a href="mailto:ventas@serviciosfunerariosdejesus.com.mx" class="hover:text-gold-500">ventas@serviciosfunerariosdejesus.com.mx</a>
+          </li>
+          <li class="flex items-start gap-2">
+            <MapPin class="w-4 h-4 text-gold-500 mt-1 shrink-0" />
+            <span>Av. Juan de Palafox y Mendoza 2616-A, Resurgimiento, Puebla</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm">
+        © {new Date().getFullYear()} Servicios Funerarios De Jesús. Todos los derechos reservados.
+      </p>
+      <p class="text-sm">
+        Desarrollado por <a href="https://www.instagram.com/abraham_o.perez/" target="_blank" class="text-gold-500 hover:text-gold-400">Abraham Ojeda</a>
+      </p>
+    </div>
+  </div>
+</footer>
