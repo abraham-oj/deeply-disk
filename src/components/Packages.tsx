@@ -3,10 +3,10 @@ import { Check } from 'lucide-react';
 
 const packages = [
   {
-    name: 'Clásico',
-    price: '596',
+    name: 'Aqui deben definir',
+    price: '500',
     period: '42 meses',
-    total: '$28,000',
+    total: '$30,000',
     image: 'https://www.casketsbydesign.com/images/coffins/pine-coffin-480x320.webp',
     features: [
       'Ataúd de pino barnizado modelo Clásico',
@@ -15,7 +15,7 @@ const packages = [
       'Capilla de velación con cafetería',
       'Embalsamado y arreglo estético',
       'Servicio de cremación o inhumación',
-      'Horno crematorio propio',
+      'Horno crematorio',
       'Urna modelo Clásico incluida',
       'Misa de cuerpo presente',
       '100% transferible',
@@ -25,7 +25,7 @@ const packages = [
     popular: false
   },
   {
-    name: 'Elegante',
+    name: 'nombre raro',
     price: '812',
     period: '42 meses',
     total: '$37,900',
@@ -37,7 +37,7 @@ const packages = [
       'Capilla de velación con cafetería',
       'Embalsamado y arreglo estético',
       'Servicio de cremación o inhumación',
-      'Horno crematorio propio',
+      'Horno crematorio',
       'Urna modelo Clásico incluida',
       'Misa de cuerpo presente',
       '100% transferible',
@@ -80,7 +80,7 @@ export default function Packages() {
             Protección Familiar
           </h3>
           <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight">
-            Planes a Futuro
+            Previsiònes a Futuro
           </h2>
           <div className="h-1 w-24 bg-gold-500 mt-4 mx-auto"></div>
           <p className="text-slate-400 mt-6 max-w-2xl mx-auto">
@@ -136,7 +136,7 @@ export default function Packages() {
 
                 {/* CTA */}
                 <a 
-                  href={`https://wa.me/5212228762812?text=Hola, me interesa el plan ${pkg.name}`}
+                  href={`https://wa.me/5212228  762812?text=Hola, me interesa el plan ${pkg.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full text-center py-3 rounded-full font-bold transition-all ${
@@ -145,7 +145,7 @@ export default function Packages() {
                       : 'border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-black'
                   }`}
                 >
-                  Solicitar Información
+                  Solicitar Cotizacion
                 </a>
               </div>
             </div>

@@ -3,17 +3,17 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Familia García',
+    name: 'PEPITO PEREZ',
     text: 'El equipo de Servicios Funerarios de Jesús nos brindó un apoyo invaluable en un momento muy difícil. Su profesionalismo y empatía hicieron que todo el proceso fuera más llevadero. Altamente recomendados.',
     rating: 5
   },
   {
-    name: 'María López',
+    name: 'JUAN ESCUTIA',
     text: 'Gracias por su atención respetuosa y detallada. Nos sentimos acompañados y tranquilos sabiendo que todo estaba en buenas manos.',
     rating: 5
   },
   {
-    name: 'Familia Ramírez',
+    name: 'FERNANDO MONTES DE OCA',
     text: 'Excelente servicio, instalaciones impecables y personal muy humano. Cumplieron con todo lo prometido y más.',
     rating: 5
   }

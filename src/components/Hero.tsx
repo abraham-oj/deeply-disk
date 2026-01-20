@@ -36,14 +36,14 @@ export default function Hero() {
               href="#planes"
               className="bg-gradient-to-r from-gold-600 to-gold-500 text-black px-8 py-4 rounded-full font-bold hover:from-gold-500 hover:to-gold-400 transition-all transform hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2"
             >
-              Ver Planes a Futuro
+              Ver Previsiònes a Futuro
             </a>
             <a 
               href="tel:+522222576534"
               className="border-2 border-gold-500 text-gold-500 px-8 py-4 rounded-full font-bold hover:bg-gold-500 hover:text-black transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              Solicitar Ayuda Inmediata
+              Solicitar Cotizacion Inmediata
             </a>
           </div>
         </div>

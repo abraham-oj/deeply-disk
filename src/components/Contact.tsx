@@ -26,13 +26,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-xl font-serif text-white mb-2">Teléfonos</h3>
-                  <a href="tel:+522222576534" className="text-gold-500 text-2xl font-bold block hover:text-gold-400">
-                    222 257 6534
+                  <a href="tel:+522226173851" className="text-gold-500 text-2xl font-bold block hover:text-gold-400">
+                    222 617 3851
                   </a>
                   <p className="text-slate-400 text-sm mt-1">Emergencias 24/7</p>
                   <div className="mt-3 space-y-1 text-slate-400">
-                    <p>Oficina: 222 804 9568</p>
-                    <p>Alt: 222 617 3851</p>
+                    <p>Oficina: 221-204-7758</p>
+                    <p>Alt: 222-804-9568</p>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function Contact() {
                     Col. Resurgimiento<br />
                     72380 Puebla, Pue.
                   </p>
-                  <p className="text-gold-500 text-sm mt-2">A 5 minutos del Centro</p>
+                  <p className="text-gold-500 text-sm mt-2">A 5 minutos del Centro y frente a la Unidad Deportiva del Parque Ecoloco</p>
                 </div>
               </div>
             </div>
@@ -76,10 +76,10 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-serif text-white mb-2">Correos</h3>
                   <a href="mailto:ventas@serviciosfunerariosdejesus.com.mx" className="text-gold-500 hover:text-gold-400 block text-sm">
-                    ventas@serviciosfunerariosdejesus.com.mx
+                    aqui-pensar-si-pagan@correo.ono
                   </a>
                   <a href="mailto:dejesuserviciosfunerarios23@gmail.com" className="text-slate-400 hover:text-gold-400 block text-sm mt-1">
-                    dejesuserviciosfunerarios23@gmail.com
+                    noseveprofesionaluncorreogmail
                   </a>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function Contact() {
             {/* Social Media */}
             <div className="flex gap-4">
               <a 
-                href="https://www.facebook.com/zaidojeda" 
+                href="https://www.facebook.com/profile.php?id=61551069742912" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-full border border-slate-700 hover:border-gold-500 transition-all group"
@@ -96,7 +96,7 @@ export default function Contact() {
                 <Facebook className="w-6 h-6 text-slate-400 group-hover:text-gold-500" />
               </a>
               <a 
-                href="https://www.instagram.com/abraham_o.perez/" 
+                href="https://www.facebook.com/share/v/17xXeLYzsS/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-full border border-slate-700 hover:border-gold-500 transition-all group"

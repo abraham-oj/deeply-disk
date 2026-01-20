@@ -6,7 +6,7 @@ const services = [
     icon: Flame,
     title: 'Cremación Certificada',
     description: 'Contamos con horno crematorio propio dentro de nuestras instalaciones, garantizando un proceso digno y transparente.',
-    features: ['Horno propio', 'Urnas incluidas', 'Certificados oficiales']
+    features: ['Horno ', 'Urnas incluidas', 'Certificados oficiales']
   },
   {
     icon: Church,
